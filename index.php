@@ -36,13 +36,13 @@ include_once("includes/datos.php");                                 		// HTTP/1.
 <tr>
    <td colspan="3" align="center">
    
-   <br><br><img src="images/logo.gif"  border="0" title="<?php echo $empresa; ?>" alt="<? echo $empresa; ?>" align="top"><br>
+   <br><br><img src="images/logo.gif"  border="0" title="<?php echo $empresa; ?>" alt="<?php echo $empresa; ?>" align="top"><br>
   </td>  
 </tr>
 <tr>
     <td colspan="2" align="center" 
 	<?php if($_REQUEST["errorusuario"]=="si") {
-		echo "bgcolor=red><span style="color:ffffff"><b>Datos incorrectos</b></span>";
+		echo "bgcolor=red><span style='color:ffffff'><b>Datos incorrectos</b></span>";
 	} elseif($_REQUEST["errorusuario"]=="inactivo") {
 	    echo "bgcolor=red><span style='color:ffffff'><b>Usuario inactivo</b></span>";
 	} else {
